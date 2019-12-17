@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">Informasi Tenaga Pendidik</string>
+    <string name="app_name_disp">INFORMASI TENAGA PENDIDIK</string>
+    <string name="biodata">Biodata</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="pendidikan_terakhir">Pendidikan Terakhir</string>
+    <string name="data_kepegawaian">Data Kepegawaian</string>
+    <string name="nuptk">NUPTK</string>
+    <string name="id_pegawai">ID Pegawai</string>
+    <string name="nrg">NRG</string>
+    <string name="status_verval">Status Verval</string>
+    <string name="tgl_terbit_nuptk">Tgl. Terbit NUPTK</string>
+    <string name="status_pegawai">Status Pegawai</string>
+    <string name="fungsi">Fungsi</string>
+    <string name="jabatan_tugas">Jabatan/Tugas</string>
+    <string name="proses_verval">Proses Verval</string>
+    <string name="status_aktif">Status Aktif</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="data_instansi_induk">Data Instansi Induk</string>
+    <string name="instansi">Instansi</string>
+    <string name="instansi_id">Instansi ID</string>
+    <string name="alamat_sekolah">Alamat Sekolah</string>
+    <string name="propinsi">Propinsi</string>
+    <string name="kota_kabupaten">Kota/Kabupaten</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="riwayat_verval">Riwayat Verval</string>
+    <string name="verval_tahun_2014_semester_1">Verval Tahun 2014 Semester 1</string>
+    <string name="verval_tahun_2014_semester_2">Verval Tahun 2014 Semester 2</string>
+    <string name="verval_tahun_2015_semester_1">Verval Tahun 2015 Semester 1</string>
+    <string name="verval_tahun_2015_semester_2">Verval Tahun 2015 Semester 2</string>
+    <string name="verval_tahun_2016_semester_1">Verval Tahun 2016 Semester 1</string>
+    <string name="verval_tahun_2016_semester_2">Verval Tahun 2016 Semester 2</string>
+    <string name="verval_tahun_2017_semester_1">Verval Tahun 2017 Semester 1</string>
+    <string name="verval_tahun_2017_semester_2">Verval Tahun 2017 Semester 2</string>
+    <string name="verval_tahun_2018_semester_1">Verval Tahun 2018 Semester 1</string>
+    <string name="verval_tahun_2018_semester_2">Verval Tahun 2018 Semester 2</string>
+    <string name="aktif">Aktif</string>
+    <string name="nonaktif">Tidak Aktif</string>
+    <string name="con_fail">Koneksi Gagal</string>
+    <string name="message_con_fail">Mohon periksa koneksi internet anda</string>
+    <string name="not_data">Data Tidak Ditemukan</string>
+    <string name="message_not_data">Mohon periksa kembali PTK yang anda masukkan</string>
+    <string name="detail_pendidik">Detail Pendidik</string>
+    <string name="masukkan_nomor_ptk">Masukkan Nomor PTK</string>
+    <string name="cari">cari</string>
+    <string name="creator">Created by \nWAHYU ARDIANSYAH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

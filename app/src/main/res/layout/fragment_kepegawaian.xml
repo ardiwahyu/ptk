@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragment.KepegawaianFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/large"
+        android:layout_marginHorizontal="@dimen/medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/data_kepegawaian"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small"
+            android:background="#d3d3d3"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:stretchColumns="2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/back">
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/nuptk"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_nuptk"
+                    tools:text="Wahyu Ardiansyah"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/id_pegawai"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_peg_id"
+                    tools:text="Laki-laki"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/nrg"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_nrg"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/TextViewTableLeft"
+                    android:text="@string/status_verval" />
+
+                <include layout="@layout/status_verval"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/tgl_terbit_nuptk"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_tgl_terbit"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/status_pegawai"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_status_peg"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/fungsi"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_fungsi"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/jabatan_tugas"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_jabatan"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/proses_verval"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/proses_verval"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/status_aktif"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_status_aktif"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+        </TableLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

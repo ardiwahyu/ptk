@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragment.InstansiFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/large"
+        android:layout_marginHorizontal="@dimen/medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/data_instansi_induk"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small"
+            android:background="#d3d3d3"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/back">
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/instansi"
+                    style="@style/TextViewTableLeft"
+                    android:layout_width="200dp"/>
+                <TextView
+                    android:id="@+id/tv_instansi"
+                    tools:text="Wahyu Ardiansyah"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/instansi_id"
+                    style="@style/TextViewTableLeft"
+                    android:layout_width="200dp"/>
+                <TextView
+                    android:id="@+id/tv_instansi_id"
+                    tools:text="Laki-laki"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/alamat_sekolah"
+                    style="@style/TextViewTableLeft"
+                    android:layout_width="200dp"/>
+                <TextView
+                    android:id="@+id/tv_alamat_sekolah"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/propinsi"
+                    style="@style/TextViewTableLeft"
+                    android:layout_width="200dp"/>
+                <TextView
+                    android:id="@+id/tv_propinsi"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/kota_kabupaten"
+                    style="@style/TextViewTableLeft"
+                    android:layout_width="200dp"/>
+                <TextView
+                    android:id="@+id/tv_kota"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/kecamatan"
+                    style="@style/TextViewTableLeft"
+                    android:layout_width="200dp"/>
+                <TextView
+                    android:id="@+id/tv_kecamatan"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+        </TableLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

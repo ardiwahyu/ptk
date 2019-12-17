@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragment.VervalFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/large"
+        android:layout_marginHorizontal="@dimen/medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/riwayat_verval"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small"
+            android:background="#d3d3d3"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/back">
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2014_semester_1"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20141"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2014_semester_2"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20142"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2015_semester_1"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20151"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2015_semester_2"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20152"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2016_semester_1"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20161"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2016_semester_2"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20162"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2017_semester_1"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20171"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2017_semester_2"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20172"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2018_semester_1"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20181"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small">
+                <TextView
+                    android:text="@string/verval_tahun_2018_semester_2"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_ver20182"
+                    android:text="@string/nonaktif"
+                    android:textColor="@color/colorNonAktif"
+                    android:textAlignment="center"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView >

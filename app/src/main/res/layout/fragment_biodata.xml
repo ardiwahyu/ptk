@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragment.BiodataFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/large"
+        android:layout_marginHorizontal="@dimen/medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/biodata"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small"
+            android:background="#d3d3d3"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/large"
+            android:id="@+id/img_profil"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            tools:src="@color/colorAccent"
+            android:layout_marginBottom="@dimen/large"
+            android:background="@drawable/back_image"
+            android:scaleType="centerCrop"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:stretchColumns="2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/back">
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/nama_lengkap"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_nama"
+                    tools:text="Wahyu Ardiansyah"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/jenis_kelamin"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_kelamin"
+                    tools:text="Laki-laki"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+            <TableRow android:padding="@dimen/small"
+                android:layout_width="@dimen/nol">
+                <TextView
+                    android:text="@string/pendidikan_terakhir"
+                    style="@style/TextViewTableLeft"/>
+                <TextView
+                    android:id="@+id/tv_kualifikasi"
+                    tools:text="S1"
+                    style="@style/TextViewTable"/>
+            </TableRow>
+        </TableLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
