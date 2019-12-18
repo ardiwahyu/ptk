@@ -32,7 +32,7 @@ class Pendidik() : Parcelable {
     private var statusVerval : Int = 0
     private lateinit var vervals : List<Verval>
 
-    fun Pendidik(jsonObject: JSONObject){
+    constructor(jsonObject: JSONObject) : this() {
         try{
             val ptk : JSONObject = jsonObject.getJSONObject("ptk")
             this.foto = ptk.getString("foto")
@@ -60,6 +60,90 @@ class Pendidik() : Parcelable {
         }catch (e : JSONException){
             e.printStackTrace()
         }
+    }
+
+    fun getFoto() : String{
+        return foto
+    }
+
+    fun getNama() : String{
+        return if (nama == "null")  "-" else nama
+    }
+
+    fun getKelamin(): String {
+        return if (kelamin == "null") "-" else kelamin
+    }
+
+    fun getKualifikasi(): String {
+        return if (kualifikasi == "null") "-" else kualifikasi
+    }
+
+    fun getNuptk(): String {
+        return if (nuptk == "null") "-" else nuptk
+    }
+
+    fun getPtkId(): String {
+        return if (ptkId == "null") "-" else ptkId
+    }
+
+    fun getNrg(): String {
+        return if (nrg == "null") "-" else nrg
+    }
+
+    fun getTglTerbit(): String {
+        return if (tglTerbit == "null") "-" else tglTerbit
+    }
+
+    fun getStatus(): String {
+        return if (status == "null") "-" else status
+    }
+
+    fun getFungsi(): String {
+        return if (fungsi == "null") "-" else fungsi
+    }
+
+    fun getTugas(): String {
+        return if (tugas == "null") "-" else tugas
+    }
+
+    fun getProses(): String {
+        return if (proses == "null") "-" else proses
+    }
+
+    fun getAktif(): String {
+        return if (aktif == "null") "-" else aktif
+    }
+
+    fun getNamaIns(): String {
+        return if (namaIns == "null") "-" else namaIns
+    }
+
+    fun getIdIns(): String {
+        return if (idIns == "null") "-" else idIns
+    }
+
+    fun getAlamatIns(): String {
+        return if (alamatIns == "null") "-" else alamatIns
+    }
+
+    fun getProvinsiIns(): String {
+        return if (provinsiIns == "null") "-" else provinsiIns
+    }
+
+    fun getKotaIns(): String {
+        return if (kotaIns == "null") "-" else kotaIns
+    }
+
+    fun getKecamatanIns(): String {
+        return if (kecamatanIns == "null") "-" else kecamatanIns
+    }
+
+    fun getStatusVerval(): Int {
+        return statusVerval
+    }
+
+    fun getVervals(): List<Verval> {
+        return vervals
     }
 
     private fun setVerval(jsonArray: JSONArray) : List<Verval>{

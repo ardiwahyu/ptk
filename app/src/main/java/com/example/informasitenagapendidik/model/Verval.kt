@@ -4,15 +4,23 @@ import org.json.JSONException
 import org.json.JSONObject
 
 class Verval(jsonObject: JSONObject) {
-    var tahun : Int = 0
-    var periode : Int = 0
+    private var tahun : Int = 0
+    private var periode : Int = 0
 
-    fun Verval(jsonObject: JSONObject){
+    init {
         try {
-            this.tahun = jsonObject.getInt("tahun_verval")
+            this.tahun = jsonObject.getInt("thn_verval")
             this.periode = jsonObject.getInt("periode_verval")
         }catch (e: JSONException){
             e.printStackTrace()
         }
+    }
+
+    fun getTahun() : Int {
+        return tahun
+    }
+
+    fun getPeriode() : Int {
+        return periode
     }
 }

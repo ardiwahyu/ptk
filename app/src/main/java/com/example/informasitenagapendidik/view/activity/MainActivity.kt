@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setTheme(R.style.AppThemeNoActionBar)
         setContentView(R.layout.activity_main)
+        initComponent()
     }
 
     override fun onClick(v: View?) {
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             if (v.id == R.id.btn_search && notError){
                 val ptk = edPtk.text!!.toString()
                 val intent = Intent(this@MainActivity, DataActivity::class.java)
-//                intent.putExtra(DataActivity.EXTRA_PTK, ptk)
+                intent.putExtra(DataActivity().EXTRA_PTK, ptk)
                 startActivity(intent)
             }
         }

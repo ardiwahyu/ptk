@@ -39,13 +39,13 @@ class BiodataFragment : Fragment() {
     }
 
     private fun display(pendidik: Pendidik) {
-        tvNama!!.setText(pendidik.getNama())
-        if (pendidik.getKelamin().equalsIgnoreCase("L"))
-            tvKelamin!!.setText(resources.getString(R.string.laki_laki))
-        else if (pendidik.getKelamin().equalsIgnoreCase("P"))
-            tvKelamin!!.setText(resources.getString(R.string.perempuan))
-        tvKualifikasi!!.setText(pendidik.getKualifikasi())
-        Glide.with(imgProfil!!.context).load(pendidik.getFoto())
-            .placeholder(R.drawable.load).into(imgProfil!!)
+        tvNama.text = pendidik.getNama()
+        if (pendidik.getKelamin().equals("L", ignoreCase = true))
+            tvKelamin.text = resources.getString(R.string.laki_laki)
+        else if (pendidik.getKelamin().equals("P", ignoreCase = true))
+            tvKelamin.text = resources.getString(R.string.perempuan)
+        tvKualifikasi.text = pendidik.getKualifikasi()
+        Glide.with(imgProfil.context).load(pendidik.getFoto())
+            .placeholder(R.drawable.load).into(imgProfil)
     }
 }
