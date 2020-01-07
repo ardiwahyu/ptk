@@ -12,6 +12,8 @@ runImage:
   #    changes:
   #      - Dockerfile
   when: manual
+  tags:
+    - devel-39
 
 lintDebug:
   stage: build
