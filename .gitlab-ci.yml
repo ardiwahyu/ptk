@@ -1,8 +1,8 @@
-image: ardiwahyu/android:latest
+image: ardiwahyu/android:28.0.3
 
 variables:
   GRADLE_OPTS: "-Dorg.gradle.daemon=false"
-  
+
 before_script:
   - chmod +x ./gradlew
 
