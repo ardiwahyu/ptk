@@ -1,8 +1,19 @@
 image: dhub.dev.siap.id/ejukir/android:latest
 
 stages:
+  - run_image
   - build
   - test
+
+runImage:
+  stage: run_image
+  script:
+    - docker-compose build
+    - docker-compose push
+  #  only:
+  #    changes:
+  #      - Dockerfile
+  when: manual
 
 lintDebug:
   stage: build
@@ -10,6 +21,7 @@ lintDebug:
     - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
   only:
     - devel
+  when: manual
 
 assembleDebug:
   stage: build
@@ -20,6 +32,7 @@ assembleDebug:
       - app/build/outputs/
   only:
     - devel
+  when: manual
 
 debugTests:
   stage: test
@@ -27,3 +40,4 @@ debugTests:
     - ./gradlew -Pci --console=plain :app:testDebug
   only:
     - devel
+  when: manual
