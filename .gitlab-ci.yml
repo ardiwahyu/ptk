@@ -1,17 +1,7 @@
+image: ardiwahyu/android:latest
 stages:
-  - run_image
   - build
   - test
-
-runImage:
-  stage: run_image
-  script:
-    - docker-compose build
-    - docker-compose push
-  #  only:
-  #    changes:
-  #      - Dockerfile
-  when: manual
 
 lintDebug:
   stage: build
