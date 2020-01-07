@@ -1,5 +1,3 @@
-image: dhub.dev.siap.id/ejukir/android:latest
-
 stages:
   - run_image
   - build
