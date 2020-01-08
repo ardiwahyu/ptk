@@ -1,4 +1,4 @@
-image: ardiwahyu/android:28.0.3
+image: registry.gitlab.com/ardiwahyu/docker-image/android:28.0.3
 
 variables:
   GRADLE_OPTS: "-Dorg.gradle.daemon=false"
