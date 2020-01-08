@@ -16,7 +16,6 @@ lintDebug:
     - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
   only:
     - devel
-  when: manual
 
 assembleDebug:
   stage: build
@@ -27,7 +26,7 @@ assembleDebug:
       - app/build/outputs/
   only:
     - devel
-  when: manual
+  when: on_success
 
 debugTests:
   stage: test
@@ -35,4 +34,4 @@ debugTests:
     - ./gradlew -Pci --console=plain :app:testDebug
   only:
     - devel
-  when: manual
+  when: on_success
